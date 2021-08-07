@@ -1,0 +1,21 @@
+.shop-cart {
+	width: 990px;
+	margin: auto;
+
+	.operation-desk {
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+
+		& * {
+			margin: 0px 5px;
+		}
+
+		.add-product-shopiid {
+			border: 1px solid black;
+			width: 36px;
+			line-height: 36px;
+			text-align: center;
+		}
+	}
+}

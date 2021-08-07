@@ -1,0 +1,37 @@
+.todo-list-foot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	color: #777;
+
+	.todo-list-foot-left {
+		margin-left: 10px;
+
+		& * {
+			cursor: pointer;
+		}
+	}
+
+	.todo-list-foot-center {
+		display: flex;
+
+		& * {
+			padding: 0px 10px;
+			cursor: pointer;
+			line-height: 25px;
+		}
+
+		.active {
+			outline: 1px solid rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	.todo-list-foot-right {
+		margin-right: 10px;
+
+		& * {
+			cursor: pointer;
+		}
+	}
+}

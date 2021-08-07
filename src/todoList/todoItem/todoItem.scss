@@ -1,0 +1,109 @@
+.todo-item {
+	display: flex;
+	align-items: center;
+	min-height: 60px;
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	&:hover .todo-item-delete {
+		opacity: 0.5;
+	}
+
+	.todo-item-select {
+		width: 40px;
+		height: 40px;
+		position: relative;
+		margin-right: 10px;
+
+		& * {
+			cursor: pointer;
+		}
+
+		&[data-select='false'] .todo-item-selected-button {
+			display: none;
+		}
+
+		&[data-select='true'] .todo-item-unselect {
+			display: none;
+		}
+
+		.todo-item-selected-button {
+			width: 100%;
+			height: 100%;
+		}
+
+		.todo-item-unselect {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			width: 20px;
+			height: 20px;
+			border: 1px solid rgba(0, 0, 0, 0.3);
+			border-radius: 50%;
+		}
+	}
+
+	.todo-item-select[data-select='true'] + .todo-item-input {
+		text-decoration: line-through;
+		color: rgba(0, 0, 0, 0.3);
+	}
+
+	.todo-item-input {
+		display: flex;
+		align-items: center;
+		width: 500px;
+		font-size: 30px;
+		flex: 1;
+		transition: color 0.3s;
+		padding: 15px;
+
+		&[data-show='false'] {
+			outline: 1px solid rgba(0, 0, 0, 0.3);
+		}
+
+		&[data-show='true'] .todo-item-input-text {
+			display: block;
+		}
+
+		&[data-show='false'] .todo-item-input-box {
+			display: block;
+		}
+
+		.todo-item-input-text {
+			width: 100%;
+			min-height: 34px;
+			word-wrap: break-word;
+			display: none;
+		}
+
+		.todo-item-input-box {
+			width: 100%;
+			font-size: 100%;
+			display: none;
+		}
+	}
+
+	.todo-item-delete {
+		position: absolute;
+		right: 20px;
+		bottom: 23px;
+		width: 20px;
+		height: 20px;
+		opacity: 0;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		.todo-item-delete-button {
+			width: 100%;
+			height: 100%;
+
+			& path {
+				stroke: #af5b5e;
+				stroke-width: 3px;
+				stroke-linecap: round;
+			}
+		}
+	}
+}

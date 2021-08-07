@@ -1,0 +1,33 @@
+.content {
+  padding: 10px;
+}
+
+.content .snake {
+  border: 3px solid black;
+  margin: auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+}
+
+.content .snake .head {
+  position: absolute;
+  background: red;
+}
+
+.content .snake .body {
+  position: absolute;
+  background: green;
+}
+
+.content .snake .food {
+  position: absolute;
+  padding: 10px;
+}
+
+.content .snake .food .food-bg {
+  width: 100%;
+  height: 100%;
+  background: yellow;
+}
+/*# sourceMappingURL=snakeEating.css.map */

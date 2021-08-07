@@ -1,0 +1,58 @@
+<div class="shop-cart-list">
+  {{each cartList shop index}}
+  <div class="shop-item">
+    <!-- 店铺标题 -->
+    <div class="shop-title">
+      <!-- 选中按钮 -->
+      <div class="shop-item-select">
+        <input type="checkbox" class="shop-item-select-button"></input>
+      </div>
+      <div class="shop-item-title">{{shop.title}}</div>
+    </div>
+    
+    <div class="product-list">
+      {{each shop.productList pro index}}
+      <div class="product-item">
+        <!-- 选中按钮 -->
+        <div class="product-item-select">
+          <input type="checkbox" class="product-item-select-button"></input>
+        </div>
+        <!-- 商品详情 -->
+        <div class="product-item-detail">
+          <!-- 商品图片 -->
+          <div class="product-item-detail-img">
+            <img src="#" alt="" />
+          </div>
+          <!-- 商品标题 -->
+          <div class="product-item-detail-title">{{pro.title}}</div>
+        </div>
+        <!-- 商品规格 -->
+        <div class="product-item-specifications">
+          <div class="product-item-specifications-content">
+            <div class="product-item-specifications-content-text">{{pro.specifications}}</div>
+            <div class="product-item-specifications-popup">{{pro.specifications}}</div>
+          </div>
+        </div>
+        <!-- 商品单价 -->
+        <div class="product-item-unit-price">￥{{pro.unitPrice}}</div>
+        <!-- 商品数量选择 -->
+        <div class="product-item-quantity">
+          <div class="product-item-quantity-stepper">
+            <button class="product-item-quantity-stepper-reduce">-</button>
+            <input type="text" value="{{pro.num}}"  class="product-item-quantity-stepper-num"></input>
+            <button class="product-item-quantity-stepper-plus">+</button>
+          </div>
+          <div class="product-item-quantity-stock">{{pro.stock ? '有货' : '无货'}}</div>
+        </div>
+        <!-- 商品小计 -->
+        <div class="product-item-subtotal"></div>
+        <!-- 商品操作 -->
+        <div class="product-item-operation">
+          <div class="product-item-operation-delete">删除</div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  {{/each}}
+</div>

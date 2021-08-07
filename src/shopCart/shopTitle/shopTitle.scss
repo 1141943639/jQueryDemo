@@ -1,0 +1,46 @@
+.shop-cart-title {
+	display: flex;
+	height: 43px;
+	line-height: 43px;
+	font-size: 12px;
+	margin-bottom: 10px;
+	background: #f3f3f3;
+
+	.title-select-all {
+		width: 133px;
+		display: flex;
+		align-items: center;
+		margin-left: 7px;
+
+		.title-select-all-button {
+			margin-right: 8px;
+			margin-left: 4px;
+			height: 100%;
+		}
+	}
+
+	.title-product {
+		width: 378px;
+	}
+
+	.title-unit-price {
+		width: 170px;
+		padding-right: 50px;
+		text-align: right;
+	}
+
+	.title-quantity {
+		width: 80px;
+		text-align: center;
+	}
+
+	.title-subtotal {
+		width: 140px;
+		padding-right: 40px;
+		text-align: right;
+	}
+
+	.title-operation {
+		width: 75px;
+	}
+}

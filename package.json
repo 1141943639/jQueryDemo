@@ -1,0 +1,45 @@
+{
+  "name": "manualbuildvue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@popperjs/core": "^2.9.2",
+    "art-template": "^4.13.2",
+    "art-template-loader": "^1.4.3",
+    "babel-loader": "^8.2.2",
+    "bignumber.js": "^9.0.1",
+    "bootstrap": "^5.0.2",
+    "css-loader": "^5.2.6",
+    "expose-loader": "^3.0.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "jquery": "^3.6.0",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-px2rem": "^0.3.0",
+    "px2rem-loader": "^0.1.9",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^3.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.43.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "bignumber.js": "^9.0.1"
+  }
+}

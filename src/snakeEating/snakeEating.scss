@@ -1,0 +1,32 @@
+.content {
+	padding: 10px;
+	.snake {
+		border: 3px solid black;
+		max-width: 1500px;
+		margin: auto;
+		box-sizing: content-box;
+
+		position: relative;
+
+		.head {
+			position: absolute;
+			background: red;
+		}
+
+		.body {
+			position: absolute;
+			background: green;
+		}
+
+		.food {
+			position: absolute;
+			padding: 10px;
+
+			.food-bg {
+				width: 100%;
+				height: 100%;
+				background: yellow;
+			}
+		}
+	}
+}
