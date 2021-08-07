@@ -4,6 +4,8 @@
 
 jQuery（网页端） 的小 demo 有贪吃蛇 轮播图 购物车 TodoList
 
+可用 pages 预览 path：/dist/shopCart/shopCart.html
+
 Node.js 环境
 
 使用 webpack 进行打包管理
