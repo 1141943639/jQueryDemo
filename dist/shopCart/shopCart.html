@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>购物车</title>
+	<script defer src="../shopCart/shopCart.js"></script></head>
+	<body>
+		<div class="nav"></div>
+
+		<div class="shop-cart">
+			<div class="shop-cart-title"></div>
+			<div class="shop-cart-list"></div>
+			<div class="shop-cart-bottom"></div>
+			<div class="operation-desk">
+				<input
+					type="text"
+					class="add-product-shopiid"
+					data-bs-toggle="tooltip"
+					data-bs-placement="top"
+					title="请输入店铺索引"
+				/>
+				<button
+					type="button"
+					class="btn btn-success add-product"
+					data-bs-toggle="tooltip"
+					data-bs-placement="top"
+					title="在输入框输入索引来选择添加在哪个店铺下面"
+				>
+					添加新商品
+				</button>
+				<button
+					type="button"
+					class="btn btn-secondary add-shop"
+					data-bs-toggle="tooltip"
+					data-bs-placement="top"
+					title="点击添加新的店铺"
+				>
+					添加新店铺
+				</button>
+			</div>
+		</div>
+	</body>
+</html>
